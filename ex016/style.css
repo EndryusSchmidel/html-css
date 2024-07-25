@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-attachment: fixed; cor de fundo em degrade fixa ou descendo */
+    font-size: 1em ;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #034159, #025951, #02735E, #038C3E);
+    text-align: justify;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+main {
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #023116b3;
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.75em;
+    font-weight: bolder;
+    color: #02735E;
+    text-align: center;
+    text-shadow: 1px 1px 2px #034159;
+}
+
+h2 {
+    color: #038C3E;
+}
+
+p {
+    text-align: justify;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 700;
+    font-style: initial;
+}
+footer {
+    background-color: #045f2b00;
+    color: #dbfff8;
+    padding: 0px;
+    margin: 2px;
+    text-align: center;
+    font-size: 16px;
+}

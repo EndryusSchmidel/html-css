@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinânimca</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni ipsa sed et harum maiores corrupti voluptatem dolore sunt iure, dicta illum quasi reiciendis. Porro enim consequuntur fugiat nesciunt necessitatibus.</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagem/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/paisagem-m.png" type="image/png">
+        <img src="imagem/paisagem-g.png" alt="imagem flexível">
+    </picture>
+    <!--  -->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio controls>
+        <source src="midia/ele-fez-de-novo.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Adicionando vídeos</h1>
+    <video controls width="1280" height="720" poster="imagem/hisoka.jpg">
+        <source src="midia/4k_awp.mp4" type="video/mp4">
+        <source src="midia/4k.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/O8pbr5gDmf0?si=VmJ8ILVLi9QquTbX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

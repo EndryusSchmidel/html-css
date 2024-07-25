@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(57, 56, 56);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(84, 47, 97, 0.229); */
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.227);
+}
+
+p { 
+    color: rgba(255, 255, 255, 0.291);
+    text-align: justify;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 700;
+    font-style: normal;
+}

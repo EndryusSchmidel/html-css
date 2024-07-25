@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: rgb(115, 113, 113);
+            padding: 3px;
+            box-shadow: 2px 2px 5px 0px black;
+            border-radius: 2px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(12, 0, 247);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 10px;
+        }
+        article > aside {
+            background-color: rgb(174, 172, 172);
+            padding: 0.1px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+            <a href="#">Link5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut delectus nobis est vel quisquam veniam qui esse nulla sint? Perferendis, quia fugiat dicta repudiandae hic iure quas distinctio maiores!</p>
+                <aside>
+                    <p>Artigo escrito por José</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>
