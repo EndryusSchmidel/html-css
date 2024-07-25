@@ -42,7 +42,7 @@
 
 .destaque {
     color: #025951;
-    text-shadow: 1px 0px 5px rgb(8 7 7 / 50%);
+    text-shadow: 1px 0px 5px rgb(8 7 7 / 30%);
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, #025951, #02735E, #038C3E);
-    font-family: "Aref Ruqaa Ink", serif;
+    font-family: ''"Aref Ruqaa Ink", serif'';
     /* font-weight: 700; */
     font-style: normal;
     color: white;
@@ -61,6 +61,7 @@ header {
 }
 
 header > h1 {
+    font-family: 'idroid', sans-serif;
     font-size: 1.5em;
     height: 2em;
     font-weight: bold;
@@ -95,7 +96,7 @@ nav > a {
     font-weight: bold;
 }
 
-main {
+article {
     background-color: rgb(249, 249, 249);
     border-radius: 10px;
     box-shadow: 10px 10px 15px #023116b3;
@@ -105,17 +106,55 @@ main {
 }
 
 
-main > h1 {
+article > h1 {
     font-family: 'idroid', sans-serif;
     font-size: 30px;
     text-align: center;
     color: #025951;
+    border-radius: 10px;
+    background: linear-gradient(to right, #04887b, #0290768c, #038c3e47);
 }
 
-main > h2 {
+article > h2 {
     font-family: 'idroid', sans-serif;
     font-size: 30px;
     text-align: center;
     color: #025951;
+    background: linear-gradient(to right, #04887b, #0290768c, #038c3e47);
 }
 
+
+aside {
+    background-color: #5cbe7d7a;
+    display: block;
+    font-size: 1em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: -3px;
+    font-weight: bold;
+}
+
+aside > ul {
+    columns: 2;
+    font-size: 19px;
+}
+
+
+aside > h3 {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #2FA866;
+    color: white;
+    font-size: 1em;
+    padding: 12px;
+    margin: -12px 0px -6px 0px;
+}
+
+aside > p {
+    padding: 10px;
+}
+
+
+footer > p{
+    text-align: center;
+}
