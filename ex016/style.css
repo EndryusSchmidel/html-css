@@ -35,6 +35,7 @@ h1 {
 
 h2 {
     color: #038C3E;
+    font-size: 1.5em;
 }
 
 p {
@@ -43,11 +44,9 @@ p {
     font-weight: 700;
     font-style: initial;
 }
-footer {
-    background-color: #045f2b00;
-    color: #dbfff8;
-    padding: 0px;
-    margin: 2px;
+footer > p{
+    background-color: #ffffff00;
+    color: #ffffff;
     text-align: center;
     font-size: 16px;
 }
