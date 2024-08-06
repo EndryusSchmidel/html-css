@@ -230,10 +230,10 @@ aside {
 }
 
 aside > ul {
+    font-size: smaller;
     columns: 2;
     list-style-position: inside;
     list-style-type: '✓\00A0\00A0';
-    padding-left: 20px;
 }
 
 
