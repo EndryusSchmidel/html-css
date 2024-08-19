@@ -61,7 +61,7 @@ div#t2 {
     color: white;
     background-image: url(imagens/background001.jpg);
     box-shadow: 0px 1px 16px #0000007d;
-    background-position: center right;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
