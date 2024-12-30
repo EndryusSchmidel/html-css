@@ -12,6 +12,10 @@ body {
     background: rgb(18, 2, 2);
 }
 
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Edge */
+}
+
 main {
     background: rgb(241, 240, 240);
 }
@@ -61,7 +65,7 @@ main {
         transition: all 0.2s ease-in-out;
     }
 
-    
+
 }
 
 
@@ -107,7 +111,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     background: rgba(104, 104, 104, 0.024);
     border-radius: 15px;
-    
+
     & p {
         font-size: 2em;
         text-decoration: none;
