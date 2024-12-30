@@ -1,0 +1,138 @@
+body {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+.logo {
+    display: block;
+    width: 200px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.text {
+    grid-column: span 2;
+    font-family: Arial, Helvetica, sans-serif;
+
+    & h1 {
+        font-size: 80px;
+        font-weight: bolder;
+    }
+}
+
+
+
+.left,
+.right {
+
+    & h2 {
+        font-size: 30px;
+    }
+
+    & p {
+        font-size: 20px;
+    }
+
+    & h2,
+    p {
+        margin-left: 10px;
+    }
+}
+
+.img-text {
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+}
+
+.card {
+    width: 45%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+footer {
+    text-align: right;
+    margin-top: 250px;
+    & p {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+/* celular */
+
+@media (max-width:680px) {
+    .logo {
+        width: 150px;
+    }
+
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+
+        & h1 {
+            font-size: 50px;
+        }
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
+    .card img {
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        text-align: left;
+        & h2 {
+            font-size: 30px;
+        }
+
+        & p {
+            font-size: 20px;
+            height: 100px;
+        }
+    }
+
+    .img-text {
+        width: 300px;
+        border-radius: 25px;
+        display: inline;
+        object-fit: cover;
+    }
+
+    footer {
+        text-align: end;
+        margin-top: 200px;
+
+        & p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <ul>
+                <li><a href="#">Op 1</a></li>
+                <li><a href="#">Op 2</a></li>
+                <li><a href="#">Op 3</a></li>
+                <li><a href="#">Op 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Testando</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minus cupiditate in cum tenetur consectetur deserunt, laborum provident, adipisci porro ullam libero beatae illum sed mollitia quidem iste non eaque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis illum, molestiae modi consectetur id nesciunt nam laborum itaque, adipisci iste tempora. Officiis ex dolores fuga quaerat, officia voluptatibus error exercitationem odio eveniet, at sed eum nulla, illo ad mollitia nostrum ab soluta rem. Minima sequi beatae cumque facere. Optio ducimus accusantium, odio expedita asperiores consectetur nam dolore nemo earum. Quas cum temporibus, aspernatur tempore mollitia vel dolores tempora asperiores error perferendis debitis in fuga nesciunt quibusdam repellendus. Saepe esse, deleniti labore veniam temporibus fugiat, eum perspiciatis modi quibusdam, autem dolores ratione ullam consequuntur quidem aliquid numquam placeat dolorum eius commodi explicabo alias voluptatem aliquam qui quis! Vitae id beatae vel aperiam molestias, rem, reprehenderit totam dignissimos ab at esse tempora numquam inventore labore non laboriosam nostrum quo, aliquam ad sunt sint ipsum possimus itaque aspernatur? Soluta, libero. Pariatur in eveniet alias dolorum quis voluptates omnis laboriosam, rerum asperiores voluptatibus. In sint aliquid quos similique nobis esse ea quia maxime eius? Nemo incidunt illum suscipit animi iusto, provident praesentium odio! Saepe culpa illum, tenetur repellat maiores tempore temporibus sit consequatur hic qui molestiae necessitatibus nostrum! Nulla quae cum itaque soluta natus sequi blanditiis? Laboriosam quo quas omnis, suscipit atque rerum, possimus voluptates eos nihil odit inventore consequuntur blanditiis. Rerum enim reiciendis facilis nostrum nesciunt eaque quam omnis fuga, sapiente libero ipsam laborum. Suscipit rerum consectetur porro enim laudantium ipsum dolor! Doloribus pariatur dignissimos blanditiis assumenda animi rem quos quae ea deleniti voluptate? Adipisci laudantium dolorum porro labore veniam odit ipsum nam vitae dolorem ex similique dolore error expedita tempore dicta deserunt sint, minima quae molestias earum. Sint libero facilis laudantium perferendis reprehenderit quaerat alias. Minus, amet recusandae reiciendis laudantium dicta suscipit voluptas vitae quae quos exercitationem dolorum doloremque modi ullam, enim cumque adipisci doloribus qui earum tempora nostrum obcaecati eveniet. Vitae laudantium aliquid nihil ipsam quaerat quam eum aperiam eaque, a exercitationem amet, ratione cum architecto repudiandae minus nulla labore, commodi soluta quia! Impedit eius iusto dolor accusantium temporibus necessitatibus ullam, alias perferendis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis recusandae assumenda ipsum veniam, cumque ex molestias? Ea magnam exercitationem vero veritatis minima accusantium a quos vitae dolor! Amet, adipisci!</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

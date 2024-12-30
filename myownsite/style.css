@@ -1,0 +1,50 @@
+html {
+    width: 93.2vw;
+}
+
+body{
+    background: rgb(241, 240, 240);
+}
+
+.typing-img {
+    width: 160%;
+    max-width: 250%;
+    height: 980px;
+}
+
+
+.link {
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 15px;
+    }
+
+    .texto{
+        margin-bottom: 20px;
+
+        & h1{
+            margin-bottom: 20px;
+        }
+
+        & p{
+            margin-bottom: 20px;
+        }
+    }
+
+    .typing-img {
+        max-width: 115%;
+        height: 300px;
+    }
+
+}

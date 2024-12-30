@@ -1,0 +1,77 @@
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container{
+  width: 100%;
+  max-width: 2000px;
+  height: 678px;
+}
+
+
+.iphone-dog{
+  width: 330px;
+}
+
+.btn-google {
+  color: white;
+  border: 1px solid white;
+  & img{
+    width: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.btn-google:hover {
+  color: black;
+  background-color: white;
+}
+
+.btn-apple {
+  color: black;
+  background-color: white;
+  border: 0px;
+  & img{
+    width: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.btn-apple:hover {
+  background-color: rgb(201, 201, 201);
+  color: black;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+#features {
+}

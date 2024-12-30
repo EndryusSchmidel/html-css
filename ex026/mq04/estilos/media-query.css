@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print { /* Impressão */
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita atráves do site do endrynhos';
+        text-decoration: underline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    h2 {
+        font-size: 1em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: gray;
+    }
+    
+    h2::before {
+        content: "Versão Impressora";
+    }
+
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) { /* Tablet */
+    h2 {
+        font-size: 1em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    
+    h2::before {
+        content: "Versão Tablet";
+    }
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background: url(../imagens/back-pc.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    h2 {
+        font-size: 1em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: rgb(94, 19, 90);
+    }
+    
+    h2::before {
+        content: "Versão Desktop";
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:1200px) { /* Grandes telas */
+    body {
+        background: url(../imagens/back-tv.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    h2 {
+        font-size: 1em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: rgb(77, 76, 76);
+    }
+    
+    h2::before {
+        content: "Grandes Telas";
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
+
+/* @media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+} */
