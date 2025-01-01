@@ -10,15 +10,16 @@
     font-family: doto;
     font-weight: 900;
     padding: 0;
-
+    animation: growth 1s;
 }
+
 
 
 
 @media screen and (min-width: 1269px) {
 
     body {
-        background: rgb(18, 2, 2);
+        background: rgb(0, 0, 0);
     }
 
     body::-webkit-scrollbar {
@@ -63,6 +64,7 @@
             border-radius: 3px;
             padding: 5px 15px 5px 15px;
             text-decoration: none;
+            animation: fire 4s infinite;
             transition: all 0.2s ease-in-out;
         }
 
@@ -97,6 +99,7 @@
     }
 
     .text-main {
+
         margin: 40px;
         text-align: center;
         font-family: doto;
@@ -126,6 +129,7 @@
 
 
     .skills ul {
+
         list-style: none;
     }
 
@@ -195,10 +199,10 @@
         box-shadow: 2px -1px 20px 0px black;
 
         & a {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
             opacity: 1;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
             text-decoration: none;
             font-size: 4vw;
@@ -206,7 +210,6 @@
 
         & a:hover {
             text-decoration: underline rgba(255, 255, 255, 0.809);
-            background-color: rgb(0, 0, 0);
         }
     }
 
@@ -226,8 +229,8 @@
 
         & p {
             font-size: 5vw;
+            animation: fire 4s infinite;
         }
-
     }
 
 
@@ -236,7 +239,7 @@
     }
 
     .campolink a {
-        border-radius: 15px;
+        border-radius: 25px;
     }
 
     .campolink a:hover {
@@ -255,6 +258,7 @@
         margin-bottom: 10%;
 
         & h1 {
+            font-size: 5vw;
             font-weight: 600;
             box-shadow: 0px 0px 5px black inset, 0px 0px 20px black;
             border-radius: 10px;
@@ -293,14 +297,14 @@
 
     #footer {
         justify-content: center;
+
         & ul {
             padding: 0px;
         }
     }
 
     .mail {
-        margin-left: 5px;
-        margin-bottom: 0px !important;
+        margin-bottom: 5px !important;
     }
 
     .mail:hover {
@@ -318,10 +322,40 @@
 
     .github:hover {
         background: rgba(5, 5, 5, 0.145);
-        border-radius: 5px;
     }
 
     .container-gradient {
         background: linear-gradient(180deg, rgba(241, 240, 240, 1) 0%, rgba(0, 0, 0, 0.108) 100%);
     }
+}
+
+@keyframes fire {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+}
+
+@keyframes growth {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
 }
